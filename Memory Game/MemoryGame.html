@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="MemoryGame.css" />
+    </head>
+        <style>
+            body{
+                background-image: url(./pexels-tobias-bjørkli-1938348.jpg);
+                background-size: cover;
+            }
+        </style>
+            <body>
+            <!-- Memory Game -->
+            <div class="Game-Buttons">
+                <span>Start Game</span>
+            </div>
+            <div class="Game-Info">
+                <div class="name">
+                    Hello : <span></span>
+                </div>
+                <div class="tries">
+                    Wrong tries : <span>0</span>
+                </div>
+            </div>
+            <div class="Game-Container">
+                <div class="cards" data-planets="mercury">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Mercury.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="mercury">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Mercury.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="venus">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Venus.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="venus">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Venus.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="earth">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Earth.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="earth">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Earth.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="mars">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Mars.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="mars">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Mars.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="jupiter">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Jupiter.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="jupiter">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Jupiter.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="saturn">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Saturn.webp" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="saturn">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Saturn.webp" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="uranus">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Uranus.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="uranus">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Uranus.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="neptun">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Neptun.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="neptun">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Neptun.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="sun">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./The Sun.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="sun">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./The Sun.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="pluto">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Pluto.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cards" data-planets="pluto">
+                    <div class="front face"></div>
+                    <div class="back face">
+                        <img src="./Pluto.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <audio id="start" src="./Free run sound effect.mp3" preload="auto"></audio>
+            <audio id="correct" src="./Correct answer Sound effect(MP3_320K).mp3" preload="auto"></audio>
+            <audio id="wrong" src="./Wrong Sound Effect(MP3_320K).mp3" preload="auto"></audio>
+            <!-- Memory Game -->
+                <script src="MemoryGame.js"></script>
+            </body>
+</html>

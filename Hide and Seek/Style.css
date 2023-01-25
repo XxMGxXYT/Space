@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif , Tahoma;
+    background-image: url(./Uni\ pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.start{
+    width: 100%;
+    height: 120vh;
+    margin: 100px auto;
+    position: fixed;
+    top: -19%;
+    background-color: #5f9ea091;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start h1{
+    margin-top: -266px;
+    font-size: 90px;
+    font-weight: bold;
+    animation-name: colorChanages;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.losing{
+    width: 100%;
+    height: 100vh;
+    margin: 100px auto;
+    position: fixed;
+    top: -14%;
+    background-color: rgba(0, 0, 0, 0.575);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.gameover{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(247, 209, 159, 0.932);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: red;
+}
+
+@keyframes colorChanages {
+    0%{
+        color: #5ad4ca;
+    }
+    25%{
+        color: rgb(111, 0, 255);
+    }
+    50%{
+        color: #039ae4;
+    }
+    75%{
+        color: #2600ff;
+    }
+    100%{
+        color: #d45a86;
+    }
+}
+
+.press{
+    margin-top: 15%;
+    background-color: red;
+    color: white;
+    width: fit-content;
+    height: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 13px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.press:hover{
+    background-color: rgb(207, 4, 4);
+}
+
+.pic{
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 20px;
+    height: 20px;
+}
+
+.theSecret{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: scale(9);
+}
+
+.pos1{
+    position: absolute;
+    right: 405px;
+    top: 50%;
+}
+
+.pos2{
+    position: absolute;
+    left: 610px;
+    top: 49%;
+}
+
+.pos3{
+    position: absolute;
+    left: 254px;
+    top: 74%;
+}
+
+.pos4{
+    position: absolute;
+    left: 1024px;
+    bottom: 34%;
+}
+
+.pos5{
+    position: absolute;
+    left: 1024px;
+    top: 6%;
+}
+
+
+.pos6{
+    position: absolute;
+    left: 48px;
+    top: 6%;
+}
+
+.pos7{
+    position: absolute;
+    left: 26px;
+    bottom: 19%;
+}
+
+.pos8{
+    position: absolute;
+    left: 540px;
+    bottom: 2%;
+}
+
+.pos9{
+    position: absolute;
+    left: 540px;
+    bottom: 49%;
+}
+
+.pos10{
+    position: absolute;
+    right: 50px;
+    bottom: 49%;
+}
+
+/* None */
+
+.none{
+    display: none;
+}
+
+.winning{
+    transform: scale(5) translate(-50% , -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+/* Mobile */
+@media (max-width: 440px) {
+	body{
+        background-position: center;
+    }
+    .start{
+        top: -23%;
+    }
+    .start h1{
+        font-size: 38px;
+    }
+    .pos1{
+        position: absolute;
+        right: 27px;
+        top: 65%;
+    }
+    .pos2{
+        position: absolute;
+        left: 263px;
+        top: 20%;
+    }
+    .pos3{
+        position: absolute;
+        left: 270px;
+        top: 63%;
+    }
+    .pos4{
+        position: absolute;
+        left: 20px;
+        bottom: 28%;
+    }
+    .pos5{
+        position: absolute;
+        left: 84px;
+        top: 6%;
+    }
+    .pos6{
+        position: absolute;
+        left: 0px;
+        top: 16%;
+    }
+    .pos7{
+        position: absolute;
+        left: 19px;
+        bottom: 18%;
+    }
+    .pos8{
+        position: absolute;
+        left: 67px;
+        bottom: 36%;
+    }
+    .pos9{
+        position: absolute;
+        left: 164px;
+        bottom: 42%;
+    }
+    .pos10{
+        position: absolute;
+        right: 32px;
+        bottom: 74%;
+    }
+}
+/* Mediam Mobile */
+@media (min-width: 440px) and (max-width: 767px){
+	body{
+        background-position: center;
+    }
+    .start h1{
+        font-size: 50px;
+    }
+    .pos1{
+        position: absolute;
+        right: 27px;
+        top: 63%;
+    }
+    .pos2{
+        position: absolute;
+        left: 263px;
+        top: 20%;
+    }
+    .pos3{
+        position: absolute;
+        left: 270px;
+        top: 63%;
+    }
+    .pos4{
+        position: absolute;
+        left: 20px;
+        bottom: 31%;
+    }
+    .pos5{
+        position: absolute;
+        left: 108px;
+        top: 7%;
+    }
+    .pos6{
+        position: absolute;
+        left: 0px;
+        top: 27%;
+    }
+    .pos7{
+        position: absolute;
+        left: 19px;
+        bottom: 18%;
+    }
+    .pos8{
+        position: absolute;
+        left: 67px;
+        bottom: 39%;
+    }
+    .pos9{
+        position: absolute;
+        left: 168px;
+        bottom: 47%;
+    }
+    .pos10{
+        position: absolute;
+        right: 20px;
+        bottom: 76%;
+    }
+}
+/* Tablets And Ipeds */
+@media (min-width: 767px) and (max-width: 992px){
+	body{
+        background-position: center;
+    }
+    .pos1{
+        position: absolute;
+        right: 67px;
+        top: 63%;
+    }
+    .pos2{
+        position: absolute;
+        left: 273px;
+        top: 20%;
+    }
+    .pos3{
+        position: absolute;
+        left: 187px;
+        top: 63%;
+    }
+    .pos4{
+        position: absolute;
+        left: 62px;
+        bottom: 31%;
+    }
+    .pos5{
+        position: absolute;
+        left: 87px;
+        top: 27%;
+    }
+    .pos6{
+        position: absolute;
+        left: 0px;
+        top: 38%;
+    }
+    .pos7{
+        position: absolute;
+        left: 106px;
+        bottom: 18%;
+    }
+    .pos8{
+        position: absolute;
+        left: 67px;
+        bottom: 32%;
+    }
+    .pos9{
+        position: absolute;
+        left: 263px;
+        bottom: 47%;
+    }
+    .pos10{
+        position: absolute;
+        right: 20px;
+        bottom: 76%;
+    }
+}
+/* Mini PC */
+@media (min-width: 992px) and (max-width: 1200px){
+	body{
+        background-position: center;
+    }
+    .pos1{
+        position: absolute;
+        right: 111px;
+        top: 63%;
+    }
+    .pos2{
+        position: absolute;
+        left: 365px;
+        top: 20%;
+    }
+    .pos3{
+        position: absolute;
+        left: 187px;
+        top: 63%;
+    }
+    .pos4{
+        position: absolute;
+        left: 121px;
+        bottom: 31%;
+    }
+    .pos5{
+        position: absolute;
+        left: 122px;
+        top: 27%;
+    }
+    .pos6{
+        position: absolute;
+        left: 0px;
+        top: 38%;
+    }
+    .pos7{
+        position: absolute;
+        left: 106px;
+        bottom: 18%;
+    }
+    .pos8{
+        position: absolute;
+        left: 67px;
+        bottom: 28%;
+    }
+    .pos9{
+        position: absolute;
+        left: 352px;
+        bottom: 48%;
+    }
+    .pos10{
+        position: absolute;
+        right: 34px;
+        bottom: 52%;
+    }
+}
+/* Large Computers */
+@media (min-width: 1200px){
+	
+}
